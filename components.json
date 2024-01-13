@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "apps/portfolio/tailwind.config.js",
+    "css": "apps/portfolio/app/global.css",
+    "baseColor": "zinc",
+    "cssVariables": true,
+    "prefix": "ue"
+  },
+  "aliases": {
+    "components": "@uiexplorer/ui-components/components",
+    "utils": "../../utils"
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "company": "SS&C Technologies Inc., Mumbai, India",
+    "tenure": "Sep 2020 - Present",
+    "position": "Lead Software Engineer",
+    "projects": ["Digital Investor", "Universal OnBoarding"],
+    "description": [
+      "Translated customer and system requirements into robust software design with a test-driven approach.",
+      "Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability, and performance.",
+      "Reviewed project specifications and design technology solutions that met or exceeded performance expectations.",
+      "Provided guidance and direction to less experienced staff in the resolution of highly complex technical problems.",
+      "Helped manage the application's technology platform status, project pipeline and development priorities.",
+      "Worked collaboratively with stakeholders to resolve technical roadblocks."
+    ],
+    "technologies": [
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "Tailwind",
+      "SCSS",
+      "RxJs",
+      "NgRx",
+      "NodeJs",
+      "Apollo",
+      "Micro-frontend",
+      "Remote MFE",
+      "NX",
+      "Monorepo",
+      "AWS",
+      "CICD"
+    ]
+  },
+  {
+    "company": "Arrk Solutions Pvt. Ltd., Manchester, UK",
+    "tenure": "Jan 2018 - Sep 2020",
+    "position": "Senior Frontend Developer",
+    "projects": ["Bookson One", "Totum"],
+    "description": [
+      "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
+      "Advocated for well-tested and documented high-quality code.",
+      "Contributed to projects within Scrum project management environments.",
+      "Use regulatory and compliance standards for user interface designs.",
+      "Liaised between marketing and IT on web development projects integrating front-end assets to back-end systems.",
+      "Coded using Angular, Vue, HTML, CSS and JavaScript to develop features for both mobile and desktop platforms.",
+      "Researched emerging web technologies and trends for possible incorporation into sites.",
+      "Incorporated new technology integration based on suitability and alignment to business goals."
+    ],
+    "technologies": [
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "Ionic",
+      "HTML5",
+      "Tailwind",
+      "SCSS",
+      "Vue",
+      "Micro-frontend",
+      "AWS",
+      "CICD",
+      "CircleCi"
+    ]
+  },
+  {
+    "company": "Xoriant Solutions Pvt. Ltd, Mumbai, India",
+    "tenure": "Sep 2015 - Jan 2018",
+    "position": "Frontend Developer",
+    "projects": ["SafetyChain", "Accenture"],
+    "description": [
+      "Followed SDLC best practices within an Agile environment to produce rapid iterations for clients.",
+      "Teamed on user-centric design strategy in the translation of UX and business requirements into coded solutions.",
+      "Worked cooperatively with client services, sales and design teams in a deadline-driven environment."
+    ],
+    "technologies": ["Angular", "AngularJs", "JavaScript", "TypeScript", "HTML5", "KendoUI", "less", "IoT"]
+  },
+  {
+    "company": "Atos India Pvt. Ltd, Mumbai, India",
+    "tenure": "Dec 2012 - Jun 2015",
+    "position": "Associate Executive",
+    "projects": ["SLB-InTouch", "RImage", "Internal Dashboard"],
+    "description": [
+      "Planned website development, converting mockups into usable web presence with HTML, JavaScript, jQuery, AJAX, and JSON coding.",
+      "Developed wireframes, site maps and content inventories for new website designs.",
+      "Provided front-end website development using inVision and other software.",
+      "Designed, implemented and monitored web pages, plugins and functionality for continuous improvement.",
+      "Developed page layouts and navigation tools that met or exceeded user expectations.",
+      "Applied knowledge of JavaScript and Object-Oriented Programming to create successful designs."
+    ],
+    "technologies": ["JavaScript", "jQuery", "Bootstrap", "HTML", "CSS", "ajax", "json", "Highcharts"]
+  }
+]
