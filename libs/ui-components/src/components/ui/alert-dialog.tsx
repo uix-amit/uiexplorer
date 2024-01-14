@@ -1,3 +1,4 @@
+'use client';
 import * as React from 'react';
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
 
@@ -44,13 +45,19 @@ const AlertDialogContent = React.forwardRef<
 AlertDialogContent.displayName = AlertDialogPrimitive.Content.displayName;
 
 const AlertDialogHeader = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
-  <div className={cn('ue-flex ue-flex-col ue-space-y-2 ue-text-center sm:uetext-left', className)} {...props} />
+  <div
+    className={cn('ue-flex ue-flex-col ue-space-y-2 ue-text-center sm:uetext-left', className)}
+    {...props}
+  />
 );
 AlertDialogHeader.displayName = 'AlertDialogHeader';
 
 const AlertDialogFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
-    className={cn('ue-flex ue-flex-col-reverse sm:ueflex-row sm:uejustify-end sm:uespace-x-2', className)}
+    className={cn(
+      'ue-flex ue-flex-col-reverse sm:ueflex-row sm:uejustify-end sm:uespace-x-2',
+      className
+    )}
     {...props}
   />
 );
@@ -60,7 +67,11 @@ const AlertDialogTitle = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Title>,
   React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Title>
 >(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Title ref={ref} className={cn('ue-text-lg ue-font-semibold', className)} {...props} />
+  <AlertDialogPrimitive.Title
+    ref={ref}
+    className={cn('ue-text-lg ue-font-semibold', className)}
+    {...props}
+  />
 ));
 AlertDialogTitle.displayName = AlertDialogPrimitive.Title.displayName;
 

@@ -1,3 +1,4 @@
+'use client';
 import * as React from 'react';
 import * as AvatarPrimitive from '@radix-ui/react-avatar';
 
@@ -9,7 +10,10 @@ const Avatar = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AvatarPrimitive.Root
     ref={ref}
-    className={cn('ue-relative ue-flex ue-h-10 ue-w-10 ue-shrink-0 ue-overflow-hidden ue-rounded-full', className)}
+    className={cn(
+      'ue-relative ue-flex ue-h-10 ue-w-10 ue-shrink-0 ue-overflow-hidden ue-rounded-full',
+      className
+    )}
     {...props}
   />
 ));
@@ -19,7 +23,11 @@ const AvatarImage = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Image>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>
 >(({ className, ...props }, ref) => (
-  <AvatarPrimitive.Image ref={ref} className={cn('ue-aspect-square ue-h-full ue-w-full', className)} {...props} />
+  <AvatarPrimitive.Image
+    ref={ref}
+    className={cn('ue-aspect-square ue-h-full ue-w-full', className)}
+    {...props}
+  />
 ));
 AvatarImage.displayName = AvatarPrimitive.Image.displayName;
 

@@ -1,3 +1,4 @@
+'use client';
 import * as React from 'react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
@@ -18,7 +19,7 @@ const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="ueflex">
+  <AccordionPrimitive.Header className='ueflex'>
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
@@ -28,7 +29,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <ChevronDownIcon className="ueh-4 ue-w-4 ue-shrink-0 ue-text-muted-foreground ue-transition-transform ue-duration-200" />
+      <ChevronDownIcon className='ueh-4 ue-w-4 ue-shrink-0 ue-text-muted-foreground ue-transition-transform ue-duration-200' />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -40,7 +41,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="ueoverflow-hidden ue-text-sm data-[state=closed]:ueanimate-accordion-up data-[state=open]:ueanimate-accordion-down"
+    className='ueoverflow-hidden ue-text-sm data-[state=closed]:ueanimate-accordion-up data-[state=open]:ueanimate-accordion-down'
     {...props}
   >
     <div className={cn('ue-pb-4 ue-pt-0', className)}>{children}</div>

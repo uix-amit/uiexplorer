@@ -1,0 +1,158 @@
+[
+  {
+    "year": 2023,
+    "project": "Universal OnBoarding(UOB)",
+    "company": "SS&C Technologies Inc.",
+    "technologiesUsed": [
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "Tailwind",
+      "SCSS",
+      "RxJs",
+      "NgRx",
+      "NodeJs",
+      "Apollo",
+      "Micro-frontend",
+      "Remote MFE",
+      "NX",
+      "Monorepo",
+      "AWS",
+      "CICD"
+    ],
+    "link": ""
+  },
+  {
+    "year": 2022,
+    "project": "Internal Design System",
+    "company": "SS&C Technologies Inc.",
+    "technologiesUsed": [
+      "Angular",
+      "Vue",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "Tailwind",
+      "SCSS",
+      "microsoft/fast-element",
+      "Web COmponent",
+      "Micro-frontend",
+      "Remote MFE",
+      "NX",
+      "Monorepo",
+      "AWS",
+      "CICD"
+    ],
+    "link": ""
+  },
+  {
+    "year": 2020,
+    "project": "DIgital Investor(DI)",
+    "company": "SS&C Technologies Inc.",
+    "technologiesUsed": [
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "Tailwind",
+      "SCSS",
+      "RxJs",
+      "NgRx",
+      "NodeJs",
+      "Apollo",
+      "Micro-frontend",
+      "Remote MFE",
+      "NX",
+      "Monorepo",
+      "AWS",
+      "CICD"
+    ],
+    "link": "www.natwestinvestmentsonline.com"
+  },
+  {
+    "year": 2019,
+    "project": "Totum",
+    "company": "Arrk Solutions Pvt. Ltd.",
+    "technologiesUsed": [
+      "Angular",
+      "JavaScript",
+      "TypeScript",
+      "Ionic",
+      "HTML5",
+      "Tailwind",
+      "SCSS",
+      "Vue",
+      "Micro-frontend",
+      "AWS",
+      "CICD",
+      "CircleCi"
+    ],
+    "link": "www.totum.com"
+  },
+  {
+    "year": 2018,
+    "project": "Gamification",
+    "company": "Arrk Solutions Pvt. Ltd.",
+    "technologiesUsed": ["Angular", "JavaScript", "TypeScript", "HTML5", "Ionic", "SCSS"],
+    "link": ""
+  },
+  {
+    "year": 2018,
+    "project": "C&D",
+    "company": "Arrk Solutions Pvt. Ltd.",
+    "technologiesUsed": ["jQuery", "JavaScript", "Bootstrap", "HTML5", "CSS"],
+    "link": "www.chemistanddruggist.co.uk"
+  },
+  {
+    "year": 2018,
+    "project": "Brookson One",
+    "company": "Arrk Solutions Pvt. Ltd.",
+    "technologiesUsed": ["Angular", "JavaScript", "TypeScript", "HTML5", "Ionic", "SCSS", "CICD"],
+    "link": "www.brooksonone.co.uk/connect"
+  },
+  {
+    "year": 2017,
+    "project": "Accenture",
+    "company": "Xoriant Solutions Pvt. Ltd",
+    "technologiesUsed": ["Angular", "JavaScript", "TypeScript", "HTML5", "less", "IoT"],
+    "link": ""
+  },
+  {
+    "year": 2015,
+    "project": "SafetyChain",
+    "company": "Xoriant Solutions Pvt. Ltd",
+    "technologiesUsed": ["AngularJs", "JavaScript", "HTML5", "KendoUI", "less"],
+    "link": "www.safetychain.com"
+  },
+  {
+    "year": 2015,
+    "project": "RImage",
+    "company": "Atos India Pvt. Ltd",
+    "technologiesUsed": ["jQuery", "JavaScript", "Bootstrap", "HTML", "less", "ajax", "json"],
+    "link": "www.rimage-emea.eu/emea"
+  },
+  {
+    "year": 2014,
+    "project": "Internal Dashboard",
+    "company": "Atos India Pvt. Ltd",
+    "technologiesUsed": [
+      "jQuery",
+      "JavaScript",
+      "Bootstrap",
+      "HTML",
+      "less",
+      "ajax",
+      "json",
+      "Highcharts"
+    ],
+    "link": ""
+  },
+  {
+    "year": 2013,
+    "project": "SLB-InTouch",
+    "company": "Atos India Pvt. Ltd",
+    "technologiesUsed": ["jQuery", "JavaScript", "Bootstrap", "HTML", "less", "ajax", "json"],
+    "link": "www.slb.com"
+  }
+]
