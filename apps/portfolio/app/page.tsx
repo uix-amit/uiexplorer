@@ -6,8 +6,11 @@ import ProjectCard from './components/projectCard';
 import experiences from './assets/data/experiences.json';
 import githubImage from './assets/img/github.svg';
 import linkedInImage from './assets/img/linkedin.svg';
+import profileImage from './assets/img/profile.jpg';
 import Link from 'next/link';
 // import twitterImage from './assets/img/twitter.svg';
+import emailImage from './assets/img/email.svg';
+import whatsAppImage from './assets/img/whatsapp.svg';
 
 export default function Index() {
   const myExperiences = experiences.map((experience, index) => (
@@ -22,6 +25,7 @@ export default function Index() {
         <h2 className='ue-text-white ue-mb-6 ue-text-2xl'>
           Lead Engineer at SS&C Technologies Inc.
         </h2>
+        <Image className='ue-rounded-2xl ue-mb-6' src={profileImage} alt='Amit Kumbharkar'></Image>
         <p>I build pixel-perfect, accessible products for the web and beyond.</p>
         <p className='ue-mt-6'>
           Innovative Lead Software Engineer offering 11+ years of international expertise in
@@ -42,6 +46,20 @@ export default function Index() {
               href='https://in.linkedin.com/in/amit-kumbharkar-667415bb'
             >
               <Image width={24} height={24} src={linkedInImage} alt='LinkedIn' />
+            </a>
+          </li>
+          <li>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='mailto:amit.uiexplorer@gmail.com?subject=Discussion%3A%20%5Btopic%5D&body=Hello%20Amit%2C%0A%0AMy%20name%20is%20%5Byour%20name%5D%2C%20and%20I%20am%20mailing%20because%20I%20would%20like%20to%20arrange%20a%20meeting%20with%20you%20to%20discuss%20%5Btopic%5D.%20Would%20you%20be%20available%20for%20a%20meeting%20on%20%5Bdate%5D%20at%20%5Btime%5D%3F%20If%20not%2C%20let%20me%20know%20what%20dates%2Ftimes%20would%20work%20better%20for%20you.%0A%0ARegards%2C%0A%5Byour%20name%5D'
+            >
+              <Image width={24} height={24} src={emailImage} alt='Gmail' />
+            </a>
+          </li>
+          <li>
+            <a target='_blank' rel='noopener noreferrer' href='https://wa.link/ig0lzu'>
+              <Image width={24} height={24} src={whatsAppImage} alt='WhatsApp' />
             </a>
           </li>
         </ul>
