@@ -1,16 +1,19 @@
-'use client';
+// 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
-import ProjectCard from './components/projectCard';
+import { Button } from '@uiexplorer/ui-components';
+
 import experiences from './assets/data/experiences.json';
+import emailImage from './assets/img/email.svg';
 import githubImage from './assets/img/github.svg';
 import linkedInImage from './assets/img/linkedin.svg';
 import profileImage from './assets/img/profile.jpg';
-import Link from 'next/link';
-// import twitterImage from './assets/img/twitter.svg';
-import emailImage from './assets/img/email.svg';
+import downloadIcon from './assets/img/file-arrow-down.svg';
 import whatsAppImage from './assets/img/whatsapp.svg';
+import ProjectCard from './components/projectCard';
+// import twitterImage from './assets/img/twitter.svg';
 
 export default function Index() {
   const myExperiences = experiences.map((experience, index) => (
@@ -25,7 +28,12 @@ export default function Index() {
         <h2 className='ue-text-white ue-mb-6 ue-text-2xl'>
           Lead Engineer at SS&C Technologies Inc.
         </h2>
-        <Image className='ue-rounded-2xl ue-mb-6' src={profileImage} alt='Amit Kumbharkar'></Image>
+        <Image
+          priority={false}
+          className='ue-rounded-2xl ue-mb-6'
+          src={profileImage}
+          alt='Amit Kumbharkar'
+        ></Image>
         <p>I build pixel-perfect, accessible products for the web and beyond.</p>
         <p className='ue-mt-6'>
           Innovative Lead Software Engineer offering 11+ years of international expertise in
@@ -33,7 +41,21 @@ export default function Index() {
           development lifecycles. Quickly learns and masters new technologies while working in both
           team and independent settings.
         </p>
-        <ul className='ue-flex ue-gap-6 ue-mt-6'>
+        {/* <h3 className='ue-uppercase ue-text-xl ue-text-white ue-my-6'>checkout my resume!</h3> */}
+        <Button
+          asChild
+          className='ue-w-fit ue-my-6 ue-bg-white hover:!ue-bg-white !ue-text-[#0F172A] ue-uppercase'
+        >
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://drive.google.com/file/d/1BiX7ApFJ3baK7nYMw7aaWuPuJz3TWROJ/view'
+          >
+            <Image width={16} height={16} src={downloadIcon} alt='GitHub' className='ue-mr-2' />
+            resume
+          </a>
+        </Button>
+        <ul className='ue-flex ue-gap-6'>
           <li>
             <a target='_blank' rel='noopener noreferrer' href='https://github.com/uiexplorer'>
               <Image width={24} height={24} src={githubImage} alt='GitHub' />
@@ -69,7 +91,7 @@ export default function Index() {
           <p>
             Back in 2012, I decided to try my hand at frontend development with jQuery & Bootstrap
             and tumbled head first into the rabbit hole of coding and web development. Fast-forward
-            to today, and I&apos;ve had the privilege of building softwares across diffrent domains
+            to today, and I&apos;ve had the privilege of building softwares across different domains
             for a{' '}
             <a
               href='https://atos.net/en/'
