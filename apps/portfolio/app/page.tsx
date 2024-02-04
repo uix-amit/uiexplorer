@@ -1,24 +1,57 @@
-// 'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@uiexplorer/ui-components';
 
+import { gql } from '@apollo/client';
+import { apollo } from '../apollo';
 import experiences from './assets/data/experiences.json';
 import emailImage from './assets/img/email.svg';
+import downloadIcon from './assets/img/file-arrow-down.svg';
 import githubImage from './assets/img/github.svg';
 import linkedInImage from './assets/img/linkedin.svg';
 import profileImage from './assets/img/profile.jpg';
-import downloadIcon from './assets/img/file-arrow-down.svg';
 import whatsAppImage from './assets/img/whatsapp.svg';
-import ProjectCard from './components/projectCard';
+import ProjectCard from './components/project-card/projectCard';
+import { Blog } from './models/blog';
+import BlogSummary from './components/blog-summary/blog-summary';
 // import twitterImage from './assets/img/twitter.svg';
 
-export default function Index() {
+async function getBlogList(): Promise<any> {
+  const { data } = await apollo.query({
+    query: gql`
+      query BlogModels {
+        blogModels(orderBy: createdAt_ASC) {
+          author
+          createdAt
+          id
+          likes
+          slug
+          subtitle
+          tags
+          title
+          updatedAt
+          bannerImage {
+            url
+          }
+          content {
+            html
+          }
+        }
+      }
+    `,
+  });
+
+  return data.blogModels;
+}
+
+export default async function Index() {
+  const blogsList: Blog[] = await getBlogList();
+
   const myExperiences = experiences.map((experience, index) => (
     <ProjectCard key={index} {...experience}></ProjectCard>
   ));
+  const myBlogs = blogsList.map((blog) => <BlogSummary key={blog.id} {...blog}></BlogSummary>);
   return (
     <div className='ue-flex ue-w-full ue-flex-col lg:ue-flex-row ue-gap-12 lg:ue-gap-24'>
       <div className='ue-flex ue-flex-col ue-w-full lg:ue-sticky ue-h-fit lg:ue-top-24'>
@@ -33,6 +66,7 @@ export default function Index() {
           className='ue-rounded-2xl ue-mb-6'
           src={profileImage}
           alt='Amit Kumbharkar'
+          height={166}
         ></Image>
         <p>I build pixel-perfect, accessible products for the web and beyond.</p>
         <p className='ue-mt-6'>
@@ -85,6 +119,8 @@ export default function Index() {
             </a>
           </li>
         </ul>
+        {/* <hr className='ue-my-6' />
+        <section id='recent-blogs'>{myBlogs}</section> */}
       </div>
       <div className='ue-flex ue-flex-col ue-gap-6 ue-w-full'>
         <section id='about' className='ue-flex ue-w-full ue-flex-col ue-gap-6'>
