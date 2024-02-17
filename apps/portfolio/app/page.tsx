@@ -9,8 +9,8 @@ import experiences from './assets/data/experiences.json';
 import emailImage from './assets/img/email.svg';
 import downloadIcon from './assets/img/file-arrow-down.svg';
 import githubImage from './assets/img/github.svg';
-import linkedInImage from './assets/img/linkedin.svg';
-import profileImage from './assets/img/profile.jpg';
+// import linkedInImage from './assets/img/linkedin.svg';
+// import profileImage from './assets/img/profile.jpg';
 import whatsAppImage from './assets/img/whatsapp.svg';
 import ProjectCard from './components/project-card/projectCard';
 import { Blog } from './models/blog';
@@ -61,13 +61,13 @@ export default async function Index() {
         <h2 className='ue-text-white ue-mb-6 ue-text-2xl'>
           Lead Engineer at SS&C Technologies Inc.
         </h2>
-        <Image
+        {/* <Image
           priority={false}
           className='ue-rounded-2xl ue-mb-6'
           src={profileImage}
           alt='Amit Kumbharkar'
           height={166}
-        ></Image>
+        ></Image> */}
         <p>I build pixel-perfect, accessible products for the web and beyond.</p>
         <p className='ue-mt-6'>
           Innovative Lead Software Engineer offering 11+ years of international expertise in
@@ -95,15 +95,15 @@ export default async function Index() {
               <Image width={24} height={24} src={githubImage} alt='GitHub' />
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               target='_blank'
               rel='noopener noreferrer'
-              href='https://in.linkedin.com/in/amit-kumbharkar-667415bb'
+              href='https://in.linkedin.com/in/amit-kumbharkar'
             >
               <Image width={24} height={24} src={linkedInImage} alt='LinkedIn' />
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               target='_blank'
@@ -119,8 +119,8 @@ export default async function Index() {
             </a>
           </li>
         </ul>
-        {/* <hr className='ue-my-6' />
-        <section id='recent-blogs'>{myBlogs}</section> */}
+        <hr className='ue-my-6' />
+        <section id='recent-blogs'>{myBlogs}</section>
       </div>
       <div className='ue-flex ue-flex-col ue-gap-6 ue-w-full'>
         <section id='about' className='ue-flex ue-w-full ue-flex-col ue-gap-6'>

@@ -1,31 +1,6 @@
-import {
-  differenceInMinutes,
-  differenceInHours,
-  differenceInDays,
-  differenceInMonths,
-  differenceInYears,
-} from 'date-fns';
-
 import { Blog } from '@portfolio/models/blog';
+import { formatDate } from 'date-fns';
 import Link from 'next/link';
-
-const currentDifference = (creationDate: Date): string => {
-  console.log('differenceInHours: ', differenceInHours(new Date(), creationDate));
-  switch (true) {
-    case differenceInYears(new Date(), creationDate) > 0:
-      return `${differenceInYears(new Date(), creationDate)} years ago`;
-    case differenceInMonths(new Date(), creationDate) > 0:
-      return `${differenceInMonths(new Date(), creationDate)} months ago`;
-    case differenceInDays(new Date(), creationDate) > 0:
-      return `${differenceInDays(new Date(), creationDate)} days ago`;
-    case differenceInHours(new Date(), creationDate) > 0:
-      return `${differenceInHours(new Date(), creationDate)} hours ago`;
-    case differenceInMinutes(new Date(), creationDate) > 0:
-      return `${differenceInMinutes(new Date(), creationDate)} minutes ago`;
-    default:
-      return 'now';
-  }
-};
 
 export function BlogSummary({ title, subtitle, updatedAt, tags, slug }: Blog) {
   const tagsTemplate = tags.map((tag, index) => (
@@ -37,12 +12,10 @@ export function BlogSummary({ title, subtitle, updatedAt, tags, slug }: Blog) {
     <div className='ue-flex ue-flex-col ue-gap-3'>
       <Link href={`/blog/${slug}`}>
         <h3 className='ue-text-xl ue-capitalize ue-text-white'>{title}</h3>
+        <p>{subtitle}</p>
       </Link>
-      <div className='ue-flex ue-gap-2 ue-items-center ue-flex-wrap'>
-        {tagsTemplate}
-        {currentDifference(new Date(updatedAt))}
-      </div>
-      <p>{subtitle}</p>
+      <div className='ue-flex ue-gap-2 ue-items-center ue-flex-wrap ue-text-xs'>{tagsTemplate}</div>
+      <p>Last updated on: {formatDate(updatedAt, 'dd/MM/yyyy')}</p>
     </div>
   );
 }
