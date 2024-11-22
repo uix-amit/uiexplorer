@@ -30,8 +30,8 @@
     "project": "Internal Design System",
     "company": "SS&C Technologies Inc.",
     "technologiesUsed": [
+      "React",
       "Angular",
-      "Vue",
       "JavaScript",
       "TypeScript",
       "HTML5",
@@ -53,7 +53,7 @@
     "project": "DIgital Investor(DI)",
     "company": "SS&C Technologies Inc.",
     "technologiesUsed": [
-      "Angular",
+      "React",
       "JavaScript",
       "TypeScript",
       "HTML5",

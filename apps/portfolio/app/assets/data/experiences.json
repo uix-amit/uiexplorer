@@ -13,14 +13,14 @@
       "Worked collaboratively with stakeholders to resolve technical roadblocks."
     ],
     "technologies": [
-      "Angular",
+      "React",
       "JavaScript",
       "TypeScript",
       "HTML5",
       "Tailwind",
       "SCSS",
       "RxJs",
-      "NgRx",
+      "Redux",
       "NodeJs",
       "Apollo",
       "Micro-frontend",
@@ -47,6 +47,7 @@
       "Incorporated new technology integration based on suitability and alignment to business goals."
     ],
     "technologies": [
+      "React",
       "Angular",
       "JavaScript",
       "TypeScript",
@@ -71,7 +72,16 @@
       "Teamed on user-centric design strategy in the translation of UX and business requirements into coded solutions.",
       "Worked cooperatively with client services, sales and design teams in a deadline-driven environment."
     ],
-    "technologies": ["Angular", "AngularJs", "JavaScript", "TypeScript", "HTML5", "KendoUI", "less", "IoT"]
+    "technologies": [
+      "Angular",
+      "AngularJs",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "KendoUI",
+      "less",
+      "IoT"
+    ]
   },
   {
     "company": "Atos India Pvt. Ltd, Mumbai, India",
@@ -86,6 +96,15 @@
       "Developed page layouts and navigation tools that met or exceeded user expectations.",
       "Applied knowledge of JavaScript and Object-Oriented Programming to create successful designs."
     ],
-    "technologies": ["JavaScript", "jQuery", "Bootstrap", "HTML", "CSS", "ajax", "json", "Highcharts"]
+    "technologies": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "ajax",
+      "json",
+      "Highcharts"
+    ]
   }
 ]

@@ -9,13 +9,12 @@ import experiences from './assets/data/experiences.json';
 import emailImage from './assets/img/email.svg';
 import downloadIcon from './assets/img/file-arrow-down.svg';
 import githubImage from './assets/img/github.svg';
-// import linkedInImage from './assets/img/linkedin.svg';
-// import profileImage from './assets/img/profile.jpg';
+import linkedInImage from './assets/img/linkedin.svg';
+import profileImage from './assets/img/profile.jpg';
 import whatsAppImage from './assets/img/whatsapp.svg';
+import BlogSummary from './components/blog-summary/blog-summary';
 import ProjectCard from './components/project-card/projectCard';
 import { Blog } from './models/blog';
-import BlogSummary from './components/blog-summary/blog-summary';
-// import twitterImage from './assets/img/twitter.svg';
 
 async function getBlogList(): Promise<any> {
   const { data } = await apollo.query({
@@ -61,33 +60,28 @@ export default async function Index() {
         <h2 className='ue-text-white ue-mb-6 ue-text-2xl'>
           Lead Engineer at SS&C Technologies Inc.
         </h2>
-        {/* <Image
+        <Image
           priority={false}
           className='ue-rounded-2xl ue-mb-6'
           src={profileImage}
           alt='Amit Kumbharkar'
           height={166}
-        ></Image> */}
+        ></Image>
         <p>I build pixel-perfect, accessible products for the web and beyond.</p>
         <p className='ue-mt-6'>
-          Innovative Lead Software Engineer offering 11+ years of international expertise in
-          Frontend development. A seasoned professional with a background in full software
-          development lifecycles. Quickly learns and masters new technologies while working in both
-          team and independent settings.
+          Innovative Lead Software Engineer offering 12 years of international expertise in Frontend
+          development. A seasoned professional with a background in full software development
+          lifecycles. Quickly learns and masters new technologies while working in both team and
+          independent settings.
         </p>
-        {/* <h3 className='ue-uppercase ue-text-xl ue-text-white ue-my-6'>checkout my resume!</h3> */}
+        <h3 className='ue-uppercase ue-text-xl ue-text-white ue-my-6'>checkout my resume!</h3>
         <Button
           asChild
-          className='ue-w-fit ue-my-6 ue-bg-white hover:!ue-bg-white !ue-text-[#0F172A] ue-uppercase'
+          className='ue-w-fit ue-mb-6 ue-bg-white hover:!ue-bg-white !ue-text-[#0F172A] ue-uppercase'
         >
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://drive.google.com/file/d/1BiX7ApFJ3baK7nYMw7aaWuPuJz3TWROJ/view'
-          >
-            <Image width={16} height={16} src={downloadIcon} alt='GitHub' className='ue-mr-2' />
+          <Link href='resume.pdf' target='_blank' rel='noopener noreferrer'>
             resume
-          </a>
+          </Link>
         </Button>
         <ul className='ue-flex ue-gap-6'>
           <li>
@@ -95,7 +89,7 @@ export default async function Index() {
               <Image width={24} height={24} src={githubImage} alt='GitHub' />
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
               target='_blank'
               rel='noopener noreferrer'
@@ -103,7 +97,7 @@ export default async function Index() {
             >
               <Image width={24} height={24} src={linkedInImage} alt='LinkedIn' />
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               target='_blank'
